@@ -1,0 +1,1 @@
+jpackage --type exe --input . --dest . --main-jar .\proj.jar --main-class com.example.proj.Main --module-path "C:\Program Files\Java\javafx-jmods-19" --add-modules javafx.controls,javafx.fxml --win-dir-chooser --win-shortcut --win-menu

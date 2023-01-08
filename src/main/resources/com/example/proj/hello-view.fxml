@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="main_vbox" minHeight="600.0" minWidth="1005.0" prefHeight="600.0" prefWidth="1005.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proj.controllers.HelloController">
+    <children>
+        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <ImageView fx:id="usericon" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#userClick" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@user.png" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+                <Label fx:id="username" text="User Name">
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+                </Label>
+            </children>
+            <VBox.margin>
+                <Insets left="5.0" right="5.0" top="5.0" />
+            </VBox.margin></HBox>
+    </children>
+</VBox>

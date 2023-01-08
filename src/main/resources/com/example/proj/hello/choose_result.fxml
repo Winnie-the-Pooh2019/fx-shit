@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="content" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proj.controllers.HelloController">
+   <children>
+      <ScrollPane fx:id="scrollPane" maxHeight="700.0" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
+         <content>
+            <VBox fx:id="scrollContent" prefHeight="200.0" />
+         </content></ScrollPane>
+      <ToolBar prefHeight="40.0" prefWidth="200.0">
+        <items>
+          <Button fx:id="menu" mnemonicParsing="false" onAction="#menu" text="В меню" />
+        </items>
+      </ToolBar>
+   </children>
+</VBox>
